@@ -1,0 +1,14 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  color: rgb(14, 145, 36);
+}
+
+.text {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.text:nth-last-child(-n + 2) {
+  margin-bottom: 30px;
+}

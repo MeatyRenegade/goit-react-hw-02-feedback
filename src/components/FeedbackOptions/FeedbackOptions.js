@@ -4,13 +4,25 @@ import styles from './FeedbackOptions.module.css';
 const FeedbackOptions = ({ options }) => {
   return (
     <div>
-      <button type="button" className={styles.button} onClick={options.good}>
+      <button
+        type="button"
+        className={styles.button__good}
+        onClick={options.good}
+      >
         Good
       </button>
-      <button type="button" className={styles.button} onClick={options.neutral}>
+      <button
+        type="button"
+        className={styles.button__neutral}
+        onClick={options.neutral}
+      >
         Neutral
       </button>
-      <button type="button" className={styles.button} onClick={options.bad}>
+      <button
+        type="button"
+        className={styles.button__bad}
+        onClick={options.bad}
+      >
         Bad
       </button>
     </div>

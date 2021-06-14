@@ -1,4 +1,4 @@
-.button {
+/* .button {
   padding: 15px 30px;
   margin-right: 20px;
   border-radius: 10px;
@@ -12,15 +12,85 @@
   box-shadow: 0px 0px 11px 2px #9d16b8;
   font-size: 30px;
   font-weight: 600;
-}
+} */
 
-.button:hover {
-  box-shadow: 0 1rem 1.25rem 0 rgba(139, 7, 128, 0.5),
-    0 -0.25rem 1.5rem rgb(95, 13, 133) inset,
+.button__good {
+  padding: 15px 30px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid #012880;
+  background-image: linear-gradient(-180deg, #93ff89 0%, #1fc01f 100%);
+  box-shadow: 0 1rem 1.25rem 0 rgba(11, 231, 29, 0.5),
+    0 -0.25rem 1.5rem rgb(27, 155, 15) inset,
     0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
-    0 0.25rem 0.5rem 0 rgb(95, 39, 110) inset;
+    0 0.25rem 0.5rem 0 rgb(70, 207, 88) inset;
+  outline: none;
+  box-shadow: 0px 0px 20px 2px #16b816;
+  font-size: 30px;
+  font-weight: 600;
 }
 
-.button:active {
+.button__neutral {
+  padding: 15px 30px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid #012880;
+  background-image: linear-gradient(-180deg, #f0f7f6 0%, #1fc0c080 100%);
+  box-shadow: 0 1rem 1.25rem 0 rgba(11, 216, 231, 0.5),
+    0 -0.25rem 1.5rem rgb(15, 155, 148) inset,
+    0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgb(70, 202, 207) inset;
+  outline: none;
+  box-shadow: 0px 0px 20px 2px #16b8b8;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.button__bad {
+  padding: 15px 30px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid #012880;
+  background-image: linear-gradient(-180deg, #ff898f 0%, #c01f1f 100%);
+  box-shadow: 0 1rem 1.25rem 0 rgba(231, 11, 11, 0.5),
+    0 -0.25rem 1.5rem rgb(155, 15, 15) inset,
+    0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgb(207, 70, 70) inset;
+  outline: none;
+  box-shadow: 0px 0px 20px 2px #b81616;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.button__good:hover {
+  box-shadow: 0 1rem 1.25rem 0 rgba(11, 139, 7, 0.5),
+    0 -0.25rem 1.5rem rgb(13, 133, 19) inset,
+    0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgb(39, 110, 45) inset;
+}
+
+.button__neutral:hover {
+  box-shadow: 0 1rem 1.25rem 0 rgba(7, 139, 132, 0.336),
+    0 -0.25rem 1.5rem rgb(13, 129, 133) inset,
+    0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgb(39, 110, 106) inset;
+}
+
+.button__bad:hover {
+  box-shadow: 0 1rem 1.25rem 0 rgba(139, 7, 7, 0.5),
+    0 -0.25rem 1.5rem rgb(133, 13, 13) inset,
+    0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgb(110, 39, 39) inset;
+}
+
+.button__good:active {
+  transform: translateY(5px);
+}
+
+.button__neutral:active {
+  transform: translateY(5px);
+}
+
+.button__bad:active {
   transform: translateY(5px);
 }

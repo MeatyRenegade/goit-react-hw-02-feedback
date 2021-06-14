@@ -34,6 +34,7 @@ class App extends Component {
     const values = Object.values(this.state);
     return values.reduce(
       (accumulator, currentValue) => accumulator + currentValue,
+      0,
     );
   };
 

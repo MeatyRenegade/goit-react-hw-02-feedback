@@ -1,40 +1,27 @@
 import PropTypes from 'prop-types';
 import styles from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({ options }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
-      <button
-        type="button"
-        className={styles.button__good}
-        onClick={options.good}
-      >
-        Good
-      </button>
-      <button
-        type="button"
-        className={styles.button__neutral}
-        onClick={options.neutral}
-      >
-        Neutral
-      </button>
-      <button
-        type="button"
-        className={styles.button__bad}
-        onClick={options.bad}
-      >
-        Bad
-      </button>
+      {options.map(option => (
+        <button
+          key={option}
+          type="button"
+          className={styles.button}
+          onClick={onLeaveFeedback}
+          name={option}
+        >
+          {option}
+        </button>
+      ))}
     </div>
   );
 };
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.shape({
-    good: PropTypes.func,
-    neutral: PropTypes.func,
-    bad: PropTypes.func,
-  }),
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;

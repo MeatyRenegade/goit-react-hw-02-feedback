@@ -12,8 +12,8 @@ class App extends Component {
     bad: 0,
   };
 
-  updateFeedback = event => {
-    const { name } = event.currentTarget;
+  updateFeedback = e => {
+    const { name } = e.currentTarget;
     this.setState(prevState => {
       return { [name]: prevState[name] + 1 };
     });
